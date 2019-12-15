@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjEG4brKBT9RvpUeGeMqF1XGHgOTuqtbJCw8iGf2uUTzdFRpw&s);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 ;
+        }
+
+        .section{
+            background-color: white;
+            margin: 0;
+        }
+
+        .one{
+            display: flex;
+            /* flex-wrap: ; */
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        h1 , h3{
+            font-family: 'Georgia', Times, 'Times New Roman', serif;
+        }
+        h1{
+            color: white;
+            background-color: teal;
+            text-align: center;
+            margin: 0;
+            padding: 15px;
+        }
+        h1:hover{
+            transform: translate3d(10px,10px,10px);
+            transform: rotate(-20deg);
+            box-shadow: 4px 4px 4px 4px plum;
+            color: sandybrown;
+            
+        }
+        .link{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        li{
+            padding-left: 1px;
+            border-left:dotted 1px lightgrey;
+            margin-left: 12px;
+        }
+        a{
+            text-decoration: none;
+            margin:10px;
+            font-size:20px;
+            font-weight: 500;
+            color: gray;
+            height: 72px;
+        }
+        hr{
+            margin: 0;
+        }
+        .two{
+            max-width: 960px;
+            margin:0 auto;
+            position: relative;
+            top: 30px;
+            background-color: white;
+        }
+        h3{
+            margin: 20px;
+            font-size: 25px;
+            font-weight: 600;
+            color: teal;
+            padding: 20px;
+            border-bottom: lightgray solid 2px;
+           }
+        .label{
+            margin: 20px;
+            color: gray;
+            font-weight: 900;
+        }
+         input {
+            margin-bottom: 10px;
+            border: 1px solid transparent;
+            box-shadow: 2px 2px 2px 2px peru;
+            height: 30px;
+            width: 35%;
+        }
+        input::placeholder{
+            color: green;
+            opacity: 0.4;
+        }
+        input:focus{
+            border: 2px solid yellowgreen;
+            box-shadow: 1px 1px 1px 1px darkcyan;
+        }
+        textarea{
+            outline: lawngreen solid 1px;
+            width: 50%;
+        }
+        button{
+            padding: 20px;
+            /* border: 2px solid transparent; */
+            background-color: teal;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            border: none;
+            margin-left: 20%;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            cursor: pointer;
+            border: 2px solid lawngreen;
+            color: lightcyan;
+            padding: 18px;
+            
+        }
+        footer{
+            background-color: #666666;
+            text-align: center;
+            padding-top: 25px;
+            font-size: 12px;
+            position: sticky;
+            bottom: 0;
+            margin-top: 60px;
+            border-top: #4aaaa5 solid 8px;
+        }
+        @media( max-width:600px){
+            .one{
+                display: block;
+            }
+            ul {
+                display: block;
+                width: 100%;
+                text-align: center;
+        }
+            li {
+                padding: 15px;
+                border-left: dotted 1px lightgrey;
+                display: block;
+             }
+             .nohover{
+                 pointer-events: none;
+             }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="section">
+      <div class="one">
+        <h1 class="nohover">Ahmed Eldemerdash</h1>
+      
+        <div class="link">
+            <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="two">
+        <h3>Contact</h3>
+        <div class="label">
+            <label for="">Name: <br> <input type="text" placeholder="John smith" required autofocus></label><br>
+            <label for="">Email: <br><input type="email" placeholder="example@gmail.com" required></label><br>
+            <label for="">Message: <br><textarea name="" id="" cols="30" rows="10"></textarea></label><br><br>
+            <button>Submit</button>
+        </div>
+     </div>
+    </section>
+    <footer>
+        copyright
+    </footer>
+</body>
+</html>
