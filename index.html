@@ -13,16 +13,18 @@
         }
         body{
             margin: 0;
-            background-image: url(https://cdn.wallpapersafari.com/81/54/3Y0FrW.gif);
+            /* background-image: url(https://cdn.wallpapersafari.com/81/54/3Y0FrW.gif); */
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
             background-repeat: no-repeat;
             background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTo6prOM7coFYulEyUsE4C1wukEM1K6UvUucYckNtcthvW3rzq&s);
         }
         
-        section{
+        .section{
             background-color: white;
-            margin:0;
+            margin: 0;
         }
+
         h1 , h3{
             font-family: 'Georgia', Times, 'Times New Roman', serif;
         }
@@ -31,7 +33,7 @@
             background-color: teal;
             padding: 15px;
             text-align: center;
-            margin-bottom: 0;
+            margin: 0;
             width: 30%;
         }
         h1:hover{
@@ -41,27 +43,34 @@
             color: sandybrown;
             
         }
-        ul {
+        .link{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        ul{
             list-style-type: none;
-            margin-left:;
-            padding:0;   
-            width:100%;
-            margin-bottom: 0;
-            float: ;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
         }
+     
         li{
-            display: inline-block;
-            padding-top: 30px;  
-            float: right;
+            padding-left: 1px;
+            border-left:dotted 1px lightgrey;
+            margin-left: 12px;
         }
+      
         a{
             text-decoration: none;
             margin:10px;
-            padding-left: 10px;
-            border-left:dotted 1px lightgrey;
             font-size:20px;
-            color: grey;
+            font-weight: 500;
+            color: gray;
+            height: 72px;
         }
+        
         hr{
             margin: 0;
             
@@ -70,7 +79,7 @@
         .one{
             display: flex;
             flex-wrap: nowrap;
-            width:960px;
+            max-width:960px;
             margin: 0 auto;
         }
         
@@ -85,22 +94,45 @@
            
         }
         .two{
-            width:960px;
+            max-width:960px;
             margin: 25px  auto;
             background-color:#ffffff;
         }
         p {
             line-height: 30px;
-           
+            position: relative;
+            text-align: justify;
+            margin-right: 5px;
+            word-spacing: -1px;
         } 
+
+        span{
+            float: left;
+            width:0.7em;
+            font-size: 80px;
+            line-height: 80%;
+            color: hsl(190, 100%, 80%);
+            padding:0;
+            font-family: algerian, courier;
+            text-shadow: 2px 2px 2px  hsl(10, 100%, 20%);
+        } 
+        /* span {
+  float: left;
+  width: 0.7em;
+  font-size: 80px;
+  font-family: algerian, courier;
+  line-height: 80%;
+} */
+      
+        
+        
         #main{
-            overflow: hidden;
+            display: flex;
         }
         img{
-            width: 200px;
+            max-width: 200px;
             height:200px;
             margin: 20px;
-            float: left;
         }
         footer{
             background-color: #666666;
@@ -119,26 +151,26 @@
     </style>
 </head>
 <body>
-    <section>
-        <div class="one">
-            <h1>Ahmed Eldemerdash</h1>
-            
-    
+    <section class="section">
+     <div class="one">
+            <h1>Ahmed Eldemerdash</h1>    
+        <div class="link">
             <ul>
                <li><a href="">About</a></li>
                <li><a href="file:///C:/Users/zoddo/Repository/index.html">Portfolio</a></li>
                <li><a href="file:///C:/Users/zoddo/Repository/contact.html" >Contact</a></li>
             </ul>
-            
-        </div>
+        </div>   
+      </div>
     </section>
+
     <hr>
 
     <section class="two">
         <h3>About Me</h3>
       <div id="main">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLK7L00F2BTwtCWyRLbzJHfRoRNYDTdj8e1R7QVbsZhClZ91bq&s" alt="">
-        <p>I love soccer .. I was living in newjersey but i escaped from the freezing weather there and moved here 4 months ago then i found my car maybe flooded here :)
+           <p> <span>T</span>his is my page ..I love soccer .. I was living in newjersey but i escaped from the freezing weather there and moved here 4 months ago then i found my car maybe flooded here :)
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla recusandae cupiditate delectus illum, tempora et, dolorem eos rerum autem dolor deleniti necessitatibus voluptas veniam saepe, eveniet quam quo dignissimos.
             I love soccer .. I was living in newjersey but i escaped from the freezing weather there and moved here 4 months ago then i found my car maybe flooded here :)
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla recusandae cupiditate delectus illum, tempora et, dolorem eos rerum autem dolor deleniti necessitatibus voluptas veniam saepe, eveniet quam quo dignissimos.
