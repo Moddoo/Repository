@@ -62,13 +62,16 @@
             padding-left: 1px;
             border-left:dotted 1px lightgrey;
             margin-left: 12px;
+            color: red;
         }
+        
+
         a{
             text-decoration: none;
             margin:10px;
             font-size:20px;
             font-weight: 500;
-            color: gray;
+            /* color: gray; */
             height: 72px;
         }
         hr{
@@ -152,24 +155,53 @@
             border: 2px solid teal;
         }
         @media( max-width:600px){
+            h3{
+                text-align: center;
+            }
             .one{
                 display: block;
             }
             ul {
-                display: block;
-                width: 100%;
+                display:block ;
+                max-width: ;
                 text-align: center;
         }
-            li {
+            /* li {
                 padding: 15px;
-                border-left: dotted 1px lightgrey;
+                margin: 0;
+                border: none;
                 display: block;
+             }  */
+            .link{
+                display: inline-block;
+            }
+            li{
+              
+                border: none;
+                margin: 0;
+            }
+
+             a{
+                 display: block;
+                 max-width: 100%;
+                 padding-top: 25px;
+                 margin: 0;
              }
-             .nohover{
+             a:hover{
+                 background-color: rosybrown;
+                 color: white;
+             }
+
+             
+            .nohover{
                  pointer-events: none;
              }
-            
-        }
+            form{
+                display: block;
+                max-width: 100%;
+                text-align: center;
+            }
+        } 
 
     </style>
 </head>
