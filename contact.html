@@ -151,6 +151,11 @@
             border:2px solid orange;
             resize: none;
             width: 50%;
+            padding:7px;
+        }
+        textarea::placeholder{
+            color: green;
+            opacity: 0.4;
         }
         textarea:focus{
             border: 2px solid teal;
@@ -232,7 +237,7 @@
         <form class="label">
             <label for="">Name: <br> <input type="text" placeholder="John smith" required autofocus></label><br>
             <label for="">Email: <br><input type="email" placeholder="example@gmail.com" required></label><br>
-            <label for="">Message: <br><textarea name="" id="" cols="30" rows="10"></textarea></label><br><br>
+            <label for="">Message: <br><textarea name="" id="" cols="30" rows="10" placeholder="Write Something ..."></textarea></label><br><br>
             <button>Submit</button>
         </form>
      </div>
