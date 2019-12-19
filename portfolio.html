@@ -17,6 +17,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0 ;
+            perspective: 1000px;
         }
 
         .section{
@@ -105,11 +106,36 @@
             margin-bottom: 25px;
             text-align: center;
             box-shadow:   0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 1s;
+        }
+        .content:hover{
+            /* transform: translate3d(1px, 2px ,2px); */
+            /* transform: scale3d(1, 1, 1); */
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+
+        }
+        .content:hover p{
+            position: absolute;
+            bottom:0;
+            left:40px;
         }
         img{
             width:300px ;
             height: 280px;
         }
+        img:hover{
+            /* transform: translate3d(1px, -3px,3px); */
+            transform: scale3d(1.2, 1.2, 1);
+            cursor: pointer;
+            position: absolute;
+            left:-2px;
+            top: -5px;
+            z-index: 1;
+
+        }
+    
         footer{
             background-color: #666666;
             text-align: center;
