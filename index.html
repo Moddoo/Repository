@@ -36,12 +36,32 @@
             margin: 0;
             text-shadow: 3px 2px 2px  hsl(10, 100%, 20%);
         }
-        h1:hover{
+        /* h1:hover{
             transform: translate3d(10px,10px,10px);
             transform: rotate(-20deg);
             box-shadow: 4px 4px 4px 4px plum;
             color: sandybrown;
             
+        } */
+        h1:hover{
+            position: relative;
+            animation-name: check;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+        @keyframes check{
+            30%{
+                background:teal;
+                color:transparent;
+            }
+            60%{
+                background: yellow;
+            }
+            100%{
+                background:radial-gradient(yellow 65% ,RED 10%, teal 30%);
+                color:black;
+                text-shadow: none;
+            }
         }
         .link{
             display: flex;
@@ -200,9 +220,9 @@
             <h1 class="nohover">Ahmed Eldemerdash</h1>    
         <div class="link">
             <ul>
-                <li><a href="C:\Users\zoddo\Repository\index.html">About</a></li>
-                <li><a href="C:\Users\zoddo\Repository\portfolio.html">Portfolio</a></li>
-                <li><a href="C:\Users\zoddo\Repository\contact.html">Contact</a></li>
+                <li><a href=".\index.html">About</a></li>
+                <li><a href=".\portfolio.html">Portfolio</a></li>
+                <li><a href=".\contact.html">Contact</a></li>
             </ul>
         </div>   
       </div>
